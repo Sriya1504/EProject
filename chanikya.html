@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio with WhatsApp Template</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap">
+    <link rel="stylesheet" href="style.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <div class="background-green"></div>
+    <div class="main-container">
+        <div class="left-container">
+            <div class="header">
+                <div class="user-img" onclick="switchProfile()">
+                    <i class="fas fa-user-circle dp"></i>
+                    <span id="username-display"></span>
+                </div>
+                <ul class="nav-icons">
+                    <li><i class="fas fa-search"></i></li>
+                    <li><i class="fas fa-ellipsis-v"></i></li>
+                </ul>
+            </div>
+            <div class="search-container">
+                <div class="input">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search or start new chat">
+                </div>
+                <i class="fas fa-bars-filter"></i>
+            </div>
+            <div class="chat-list">
+                <div class="chat-box" onclick="showContent('profile')">
+                    <div class="img-box">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <div class="chat-details">
+                        <div class="text-head">
+                            <h4>Profile</h4>
+                        </div>
+                        <div class="text-message">
+                            <p>Passionate software developer...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="chat-box" onclick="showContent('education')">
+                    <div class="img-box">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="chat-details">
+                        <div class="text-head">
+                            <h4>Education</h4>
+                        </div>
+                        <div class="text-message">
+                            <p>Bachelor of Science in Computer...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="chat-box" onclick="showContent('languages')">
+                    <div class="img-box">
+                        <i class="fas fa-language"></i>
+                    </div>
+                    <div class="chat-details">
+                        <div class="text-head">
+                            <h4>Languages</h4>
+                        </div>
+                        <div class="text-message">
+                            <p>English (Fluent), Spanish...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="chat-box" onclick="showContent('skills')">
+                    <div class="img-box">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="chat-details">
+                        <div class="text-head">
+                            <h4>Skills</h4>
+                        </div>
+                        <div class="text-message">
+                            <p>JavaScript, HTML, CSS...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="chat-box" onclick="showContent('certificates')">
+                    <div class="img-box">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div class="chat-details">
+                        <div class="text-head">
+                            <h4>Certificates</h4>
+                        </div>
+                        <div class="text-message">
+                            <p>Certified JavaScript Developer...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="chat-box" onclick="showContent('projects')">
+                    <div class="img-box">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <div class="chat-details">
+                        <div class="text-head">
+                            <h4>Projects</h4>
+                        </div>
+                        <div class="text-message">
+                            <p>Portfolio Website, E-commerce...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right-container">
+            <div id="content" class="chat-container"></div>
+            <div class="chatbox-input">
+                <input id="chat-input" type="text" placeholder="Type a message">
+                <i class="fas fa-paper-plane"></i>
+            </div>
+        </div>
+    </div>
+    <script src="script1.js"></script> <!-- Link to your JavaScript file -->
+</body>
+</html>
